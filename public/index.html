@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="eyebrow">STUDENT SERVICES</p>
+            <h1>Exam Registration</h1>
+            <p class="subtitle">
+                Complete the form below to register for your examination.
+            </p>
+        </header>
+
+        <form id="registrationForm">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required maxlength="100"
+                   placeholder="Enter your full name">
+
+            <label for="rollNumber">Roll Number</label>
+            <input id="rollNumber" name="rollNumber" required maxlength="30"
+                   placeholder="Enter your roll number">
+
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required maxlength="254"
+                   placeholder="student@example.com">
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="EEE">Electrical and Electronics</option>
+                <option value="IT">Information Technology</option>
+                <option value="MECH">Mechanical Engineering</option>
+            </select>
+
+            <label for="subject">Examination Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="">Select your subject</option>
+                <option value="Data Structures">Data Structures</option>
+                <option value="DBMS">Database Management Systems</option>
+                <option value="Operating Systems">Operating Systems</option>
+                <option value="Computer Networks">Computer Networks</option>
+                <option value="Software Engineering">Software Engineering</option>
+            </select>
+
+            <button type="submit">Register for Examination</button>
+            <p id="message" role="status" aria-live="polite"></p>
+        </form>
+
+        <footer>Exam Registration Portal | Powered by Docker</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
